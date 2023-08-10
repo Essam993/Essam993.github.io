@@ -1830,7 +1830,9 @@ video {
 
     .sm\:w-\[360px\] {
         width: 360px;
+        height: 100%;
     }
+
 
     .sm\:px-16 {
         padding-left: 4rem;
@@ -1930,4 +1932,24 @@ video {
 
 .w-28.h-28 img{
 width: 100%;
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, rgb(29, 24, 54) 0%, #182848 51%, #4b6cb7 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
+    background-size: 200% auto;
+    color: #fff;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
 }
