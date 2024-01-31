@@ -11,6 +11,10 @@
     padding: 2em 0
 }
 
+.tenten-pay{
+    mix-blend-mode: plus-lighter;
+}
+
 .vertical-timeline::after {
     content: '';
     display: table;
