@@ -11,7 +11,7 @@
     padding: 2em 0
 }
 
-.tenten-pay{
+.tenten-pay {
     mix-blend-mode: plus-lighter;
 }
 
@@ -40,7 +40,6 @@
     .vertical-timeline.vertical-timeline--two-columns {
         width: 90%
     }
-
     .vertical-timeline.vertical-timeline--two-columns:before {
         left: 50%;
         margin-left: -2px
@@ -74,11 +73,9 @@
     .vertical-timeline-element {
         margin: 4em 0
     }
-
     .vertical-timeline-element:first-child {
         margin-top: 0
     }
-
     .vertical-timeline-element:last-child {
         margin-bottom: 0
     }
@@ -140,12 +137,10 @@
         opacity: 0;
         -webkit-transform: scale(.5)
     }
-
     60% {
         opacity: 1;
         -webkit-transform: scale(1.2)
     }
-
     100% {
         -webkit-transform: scale(1)
     }
@@ -157,13 +152,11 @@
         -webkit-transform: scale(.5);
         transform: scale(.5)
     }
-
     60% {
         opacity: 1;
         -webkit-transform: scale(1.2);
         transform: scale(1.2)
     }
-
     100% {
         -webkit-transform: scale(1);
         transform: scale(1)
@@ -273,12 +266,10 @@
         font-size: 20px;
         font-size: 1.25rem
     }
-
     .vertical-timeline-element-content p {
         font-size: 16px;
         font-size: 1rem
     }
-
     .vertical-timeline-element-content .vertical-timeline-element-date {
         font-size: 14px;
         font-size: .875rem
@@ -291,14 +282,12 @@
         padding: 1.5em;
         width: 44%
     }
-
     .vertical-timeline--two-columns .vertical-timeline-element-content-arrow {
         top: 24px;
         left: 100%;
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg)
     }
-
     .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
         position: absolute;
         width: 100%;
@@ -307,12 +296,10 @@
         font-size: 16px;
         font-size: 1rem
     }
-
     .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content,
     .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content {
         float: right
     }
-
     .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content-arrow,
     .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content-arrow {
         top: 24px;
@@ -321,7 +308,6 @@
         -webkit-transform: rotate(0);
         transform: rotate(0)
     }
-
     .vertical-timeline--one-column-right .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content-arrow,
     .vertical-timeline--one-column-right .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content-arrow {
         top: 24px;
@@ -330,7 +316,6 @@
         -webkit-transform: rotate(0);
         transform: rotate(0)
     }
-
     .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date,
     .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
         left: auto;
@@ -350,7 +335,6 @@
 }
 
 @media only screen and (min-width:1170px) {
-
     .vertical-timeline--two-columns.vertical-timeline--animate .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content.bounce-in,
     .vertical-timeline--two-columns.vertical-timeline--animate .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content.bounce-in {
         -webkit-animation: cd-bounce-2-inverse .6s;
@@ -371,12 +355,10 @@
         opacity: 0;
         -webkit-transform: translateX(-100px)
     }
-
     60% {
         opacity: 1;
         -webkit-transform: translateX(20px)
     }
-
     100% {
         -webkit-transform: translateX(0)
     }
@@ -388,13 +370,11 @@
         -webkit-transform: translateX(-100px);
         transform: translateX(-100px)
     }
-
     60% {
         opacity: 1;
         -webkit-transform: translateX(20px);
         transform: translateX(20px)
     }
-
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0)
@@ -406,12 +386,10 @@
         opacity: 0;
         -webkit-transform: translateX(100px)
     }
-
     60% {
         opacity: 1;
         -webkit-transform: translateX(-20px)
     }
-
     100% {
         -webkit-transform: translateX(0)
     }
@@ -423,13 +401,11 @@
         -webkit-transform: translateX(100px);
         transform: translateX(100px)
     }
-
     60% {
         opacity: 1;
         -webkit-transform: translateX(-20px);
         transform: translateX(-20px)
     }
-
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0)
@@ -437,8 +413,6 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-
 *,
 ::before,
 ::after {
@@ -457,8 +431,6 @@
     --tw-content: '';
 }
 
-
-
 html {
     line-height: 1.5;
     /* 1 */
@@ -473,6 +445,7 @@ html {
     /* 5 */
 }
 
+
 /*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
@@ -484,6 +457,7 @@ body {
     line-height: inherit;
     /* 2 */
 }
+
 
 /*
 1. Add the correct height in Firefox.
@@ -500,6 +474,7 @@ hr {
     /* 3 */
 }
 
+
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
@@ -508,6 +483,7 @@ abbr:where([title]) {
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
 }
+
 
 /*
 Remove the default font size and weight for headings.
@@ -523,6 +499,7 @@ h6 {
     font-weight: inherit;
 }
 
+
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
 */
@@ -532,6 +509,7 @@ a {
     text-decoration: inherit;
 }
 
+
 /*
 Add the correct font weight in Edge and Safari.
 */
@@ -540,6 +518,7 @@ b,
 strong {
     font-weight: bolder;
 }
+
 
 /*
 1. Use the user's configured `mono` font family by default.
@@ -556,6 +535,7 @@ pre {
     /* 2 */
 }
 
+
 /*
 Add the correct font size in all browsers.
 */
@@ -563,6 +543,7 @@ Add the correct font size in all browsers.
 small {
     font-size: 80%;
 }
+
 
 /*
 Prevent `sub` and `sup` elements from affecting the line height in all browsers.
@@ -584,6 +565,7 @@ sup {
     top: -0.5em;
 }
 
+
 /*
 1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
@@ -598,6 +580,7 @@ table {
     border-collapse: collapse;
     /* 3 */
 }
+
 
 /*
 1. Change the font styles in all browsers.
@@ -626,6 +609,7 @@ textarea {
     /* 3 */
 }
 
+
 /*
 Remove the inheritance of text transform in Edge and Firefox.
 */
@@ -634,6 +618,7 @@ button,
 select {
     text-transform: none;
 }
+
 
 /*
 1. Correct the inability to style clickable types in iOS and Safari.
@@ -652,6 +637,7 @@ button,
     /* 2 */
 }
 
+
 /*
 Use the modern Firefox focus style for all focusable elements.
 */
@@ -659,6 +645,7 @@ Use the modern Firefox focus style for all focusable elements.
 :-moz-focusring {
     outline: auto;
 }
+
 
 /*
 Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
@@ -668,6 +655,7 @@ Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/
     box-shadow: none;
 }
 
+
 /*
 Add the correct vertical alignment in Chrome and Firefox.
 */
@@ -675,6 +663,7 @@ Add the correct vertical alignment in Chrome and Firefox.
 progress {
     vertical-align: baseline;
 }
+
 
 /*
 Correct the cursor style of increment and decrement buttons in Safari.
@@ -684,6 +673,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 ::-webkit-outer-spin-button {
     height: auto;
 }
+
 
 /*
 1. Correct the odd appearance in Chrome and Safari.
@@ -697,6 +687,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
     /* 2 */
 }
 
+
 /*
 Remove the inner padding in Chrome and Safari on macOS.
 */
@@ -704,6 +695,7 @@ Remove the inner padding in Chrome and Safari on macOS.
 ::-webkit-search-decoration {
     -webkit-appearance: none;
 }
+
 
 /*
 1. Correct the inability to style clickable types in iOS and Safari.
@@ -717,6 +709,7 @@ Remove the inner padding in Chrome and Safari on macOS.
     /* 2 */
 }
 
+
 /*
 Add the correct display in Chrome and Safari.
 */
@@ -724,6 +717,7 @@ Add the correct display in Chrome and Safari.
 summary {
     display: list-item;
 }
+
 
 /*
 Removes the default spacing and border for appropriate elements.
@@ -762,6 +756,7 @@ menu {
     padding: 0;
 }
 
+
 /*
 Prevent resizing textareas horizontally by default.
 */
@@ -769,6 +764,7 @@ Prevent resizing textareas horizontally by default.
 textarea {
     resize: vertical;
 }
+
 
 /*
 1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
@@ -783,6 +779,7 @@ textarea::placeholder {
     /* 2 */
 }
 
+
 /*
 Set the default cursor for buttons.
 */
@@ -792,6 +789,7 @@ button,
     cursor: pointer;
 }
 
+
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
@@ -799,6 +797,7 @@ Make sure disabled buttons don't get the pointer cursor.
 :disabled {
     cursor: default;
 }
+
 
 /*
 1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
@@ -820,6 +819,7 @@ object {
     /* 2 */
 }
 
+
 /*
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
@@ -829,6 +829,7 @@ video {
     max-width: 100%;
     height: auto;
 }
+
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
 
@@ -947,8 +948,6 @@ video {
 .inset-0 {
     top: 0px;
     right: 0px;
-    bottom: 0px;
-    left: 0px;
 }
 
 .bottom-32 {
@@ -1610,18 +1609,14 @@ video {
     background: #000000;
     /* fallback for old browsers */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right,
-            #434343,
-            #000000);
+    background: linear-gradient(to right, #434343, #000000);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .violet-gradient {
     background: #804dee;
     background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
-    background: -webkit-linear-gradient(-90deg,
-            #804dee 0%,
-            rgba(60, 51, 80, 0) 100%);
+    background: -webkit-linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
 }
 
 .green-pink-gradient {
@@ -1634,9 +1629,7 @@ video {
     background: #f12711;
     /* fallback for old browsers */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top,
-            #f12711,
-            #f5af19);
+    background: linear-gradient(to top, #f12711, #f5af19);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1646,9 +1639,7 @@ video {
     background: #11998e;
     /* fallback for old browsers */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top,
-            #11998e,
-            #38ef7d);
+    background: linear-gradient(to top, #11998e, #38ef7d);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1659,9 +1650,7 @@ video {
     background: #56ccf2;
     /* fallback for old browsers */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top,
-            #2f80ed,
-            #56ccf2);
+    background: linear-gradient(to top, #2f80ed, #56ccf2);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1671,13 +1660,12 @@ video {
     background: #ec008c;
     /* fallback for old browsers */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top,
-            #ec008c,
-            #fc6767);
+    background: linear-gradient(to top, #ec008c, #fc6767);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 /* canvas- styles */
 
@@ -1693,87 +1681,30 @@ video {
 }
 
 @keyframes mulShdSpin {
-
     0%,
     100% {
-        box-shadow: 0em -2.6em 0em 0em #ffffff,
-            1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
-            2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
-            1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
-            0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
-            -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
-            -2.6em 0em 0 0em rgba(255, 255, 255, 0.5),
-            -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7);
+        box-shadow: 0em -2.6em 0em 0em #ffffff, 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.5), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7);
     }
-
     12.5% {
-        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.7),
-            1.8em -1.8em 0 0em #ffffff, 2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
-            1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
-            0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
-            -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
-            -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
-            -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5);
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.7), 1.8em -1.8em 0 0em #ffffff, 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5);
     }
-
     25% {
-        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.5),
-            1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7), 2.5em 0em 0 0em #ffffff,
-            1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
-            0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
-            -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
-            -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
-            -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.5), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7), 2.5em 0em 0 0em #ffffff, 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
     }
-
     37.5% {
-        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
-            1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5),
-            2.5em 0em 0 0em rgba(255, 255, 255, 0.7), 1.75em 1.75em 0 0em #ffffff,
-            0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
-            -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
-            -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
-            -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5), 2.5em 0em 0 0em rgba(255, 255, 255, 0.7), 1.75em 1.75em 0 0em #ffffff, 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
     }
-
     50% {
-        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
-            1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
-            2.5em 0em 0 0em rgba(255, 255, 255, 0.5),
-            1.75em 1.75em 0 0em rgba(255, 255, 255, 0.7), 0em 2.5em 0 0em #ffffff,
-            -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
-            -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
-            -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.5), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.7), 0em 2.5em 0 0em #ffffff, -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
     }
-
     62.5% {
-        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
-            1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
-            2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
-            1.75em 1.75em 0 0em rgba(255, 255, 255, 0.5),
-            0em 2.5em 0 0em rgba(255, 255, 255, 0.7), -1.8em 1.8em 0 0em #ffffff,
-            -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
-            -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.5), 0em 2.5em 0 0em rgba(255, 255, 255, 0.7), -1.8em 1.8em 0 0em #ffffff, -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
     }
-
     75% {
-        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
-            1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
-            2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
-            1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
-            0em 2.5em 0 0em rgba(255, 255, 255, 0.5),
-            -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.7), -2.6em 0em 0 0em #ffffff,
-            -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.5), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.7), -2.6em 0em 0 0em #ffffff, -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
     }
-
     87.5% {
-        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
-            1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
-            2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
-            1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
-            0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
-            -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
-            -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5), -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
     }
 }
 
@@ -1788,127 +1719,99 @@ video {
 }
 
 @media (min-width: 450px) {
-
     .xs\:bottom-10 {
         bottom: 2.5rem;
     }
-
     .xs\:w-\[30\%\] {
         width: 30%;
     }
-
     .xs\:w-\[320px\] {
         width: 320px;
     }
-
     .xs\:text-\[20px\] {
         font-size: 20px;
     }
-
     .xs\:text-\[40px\] {
         font-size: 40px;
     }
-
     .xs\:text-\[50px\] {
         font-size: 50px;
     }
 }
 
 @media (min-width: 640px) {
-
     .sm\:block {
         display: block;
     }
-
     .sm\:flex {
         display: flex;
     }
-
     .sm\:hidden {
         display: none;
     }
-
     .sm\:h-80 {
         height: 20rem;
     }
-
     .sm\:w-\[360px\] {
         width: 360px;
         height: 100%;
     }
-
-
     .sm\:px-16 {
         padding-left: 4rem;
         padding-right: 4rem;
     }
-
     .sm\:py-16 {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
-
     .sm\:text-\[18px\] {
         font-size: 18px;
     }
-
     .sm\:text-\[26px\] {
         font-size: 26px;
     }
-
     .sm\:text-\[50px\] {
         font-size: 50px;
     }
-
     .sm\:text-\[60px\] {
         font-size: 60px;
     }
 }
 
 @media (min-width: 768px) {
-
     .md\:h-\[550px\] {
         height: 550px;
     }
-
     .md\:text-\[60px\] {
         font-size: 60px;
     }
 }
 
 @media (min-width: 1024px) {
-
     .lg\:text-\[30px\] {
         font-size: 30px;
     }
-
     .lg\:text-\[80px\] {
         font-size: 80px;
     }
-
     .lg\:leading-\[40px\] {
         line-height: 40px;
     }
-
     .lg\:leading-\[98px\] {
         line-height: 98px;
     }
 }
 
 @media (min-width: 1280px) {
-
     .xl\:mt-12 {
         margin-top: 3rem;
     }
-
     .xl\:h-auto {
         height: auto;
     }
-
     .xl\:flex-1 {
         flex: 1 1 0%;
     }
-
     .xl\:flex-row {
         flex-direction: row;
     }
@@ -1928,16 +1831,15 @@ video {
     src: url('chrome-extension://gkkdmjjodidppndkbkhhknakbeflbomf/fonts/open_sans/open-sans-v18-latin-800.woff');
 }
 
-.w-28.h-28{
+.w-28.h-28 {
     background-color: white;
     padding: 20px;
     border-radius: 50%;
 }
 
-.w-28.h-28 img{
-width: 100%;
+.w-28.h-28 img {
+    width: 100%;
 }
-
 
 .btn-grad {
     background-image: linear-gradient(to right, rgb(29, 24, 54) 0%, #182848 51%, #4b6cb7 100%);
