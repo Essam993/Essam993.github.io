@@ -1,967 +1,2098 @@
-<html lang="en" style="--line-color: #FFF;">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" style="--line-color: #fff">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Essam | Frontend Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/threejs/r84/three.min.js">
-    </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/threejs/r84/three.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="root">
-        <div class="relative z-0 bg-primary">
-            <div class="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-                <nav class="sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-primary">
-                    <div class="w-full flex justify-between items-center max-w-7xl mx-auto">
-                        <a class="flex items-center gap-2" href="/"><img src="assets/logo.svg" alt="logo" class="w-9 h-9 object-contain">
-                            <p class="text-white text-[18px] font-bold cursor-pointer flex ">Ahmed Essam &nbsp;<span class="sm:block hidden"> | Frontend Developer</span></p>
-                        </a>
-                        <ul class="list-none hidden sm:flex flex-row gap-10">
-                            <li class="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"><a href="#about">About</a></li>
-                            <li class="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"><a href="#work">Work</a></li>
-                        </ul>
-                        <div class="sm:hidden flex flex-1 justify-end items-center"><img src="assets/menu.svg" alt="menu" class="w-[28px] h-[28px] object-contain">
-                            <div class="hidden p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl">
-                                <ul class="list-none flex justify-end items-start flex-1 flex-col gap-4">
-                                    <li class="font-poppins font-medium cursor-pointer text-[16px] text-secondary"><a href="#about">About</a></li>
-                                    <li class="font-poppins font-medium cursor-pointer text-[16px] text-secondary"><a href="#work">Work</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <section class="relative w-full h-screen mx-auto">
-                    <div class="absolute inset-0 top-[120px]  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5">
-                        <div class="flex flex-col justify-center items-center mt-5">
-                            <div class="w-5 h-5 rounded-full bg-[#915EFF]"></div>
-                            <div class="w-1 sm:h-80 h-40 violet-gradient"></div>
-                        </div>
-                        <div>
-                            <h1 class="font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 text-white">
-                                Hi, I'm <span class="text-[#915EFF]">Essam</span></h1>
-                            <p class="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 text-white-100">
-                                I develop user <br class="sm:block hidden">interfaces and web applications</p>
-                        </div>
-                    </div>
-                    <div style="position: relative; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; touch-action: none;">
-                        <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-                            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                            <lottie-player src="https://lottie.host/3a53ecd2-b419-4273-a405-cb8e210d6cdb/ceppyC2fqY.json" background="transparent" speed="1" style="width: 400px; height: 400px" loop autoplay direction="1" mode="normal"></lottie-player>
-                        </div>
-                    </div>
-                    <div class="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-                        <a href="#about">
-                            <div class="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-                                <div class="w-3 h-3 rounded-full bg-secondary mb-1" style="transform: translateY(15.5082px) translateZ(0px);"></div>
-                            </div>
-                        </a>
-                    </div>
-                </section>
+      <div class="relative z-0 bg-primary">
+        <div class="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <nav
+            class="sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-primary"
+          >
+            <div
+              class="w-full flex justify-between items-center max-w-7xl mx-auto"
+            >
+              <a class="flex items-center gap-2" href="/"
+                ><img
+                  src="assets/logo.svg"
+                  alt="logo"
+                  class="w-9 h-9 object-contain"
+                />
+                <p class="text-white text-[18px] font-bold cursor-pointer flex">
+                  Ahmed Essam &nbsp;<span class="sm:block hidden">
+                    | Frontend Developer</span
+                  >
+                </p>
+              </a>
+              <ul class="list-none hidden sm:flex flex-row gap-10">
+                <li
+                  class="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
+                >
+                  <a href="#about">About</a>
+                </li>
+                <li
+                  class="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
+                >
+                  <a href="#work">Work</a>
+                </li>
+              </ul>
+              <div class="sm:hidden flex flex-1 justify-end items-center">
+                <img
+                  src="assets/menu.svg"
+                  alt="menu"
+                  class="w-[28px] h-[28px] object-contain"
+                />
+                <div
+                  class="hidden p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl"
+                >
+                  <ul
+                    class="list-none flex justify-end items-start flex-1 flex-col gap-4"
+                  >
+                    <li
+                      class="font-poppins font-medium cursor-pointer text-[16px] text-secondary"
+                    >
+                      <a href="#about">About</a>
+                    </li>
+                    <li
+                      class="font-poppins font-medium cursor-pointer text-[16px] text-secondary"
+                    >
+                      <a href="#work">Work</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <section class="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"><span class="hash-span" id="about">&nbsp;</span>
-                <div style="opacity: 1; transform: none;">
-                    <p class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">Introduction</p>
-                    <h2 class="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Overview.
-                    </h2>
-                </div>
-                <p class="mt-4 text-secondary text-[17px] leading-[30px]" style="opacity: 1; transform: none;">My name is Essam, and I bring over six years of experience as a Frontend Developer. I hold a Bachelor's degree in Mechatronics and Automation, as well as an Associate Degree in Web Development from the Ministry of Telecommunication's NTI
-                    in Egypt.</p>
-                <p class="mt-4 text-secondary text-[17px] leading-[30px]" style="opacity: 1; transform: none;">Throughout my career, I have worked extensively with modern frontend technologies including React.js, Next.js, Vue.js, Angular, Redux, and Jest. I am currently expanding my expertise by learning Cypress. I have strong experience building
-                    complex applications such as micro-frontend systems, fintech platforms, gold investment solutions, bill payment systems, and e-commerce websites.</p>
-                <p class="mt-4 text-secondary text-[17px] leading-[30px]" style="opacity: 1; transform: none;">I’m also highly adaptable when it comes to technology and always eager to learn. My background includes work on various open-source platforms such as WordPress, Magento, OpenCart, and Laravel.</p>
-                <div class="mt-20 flex flex-wrap gap-10">
-                    <div class="xs:w-[30%] w-full" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
-                        <div class="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card" style="opacity: 1; transform: none;">
-                            <div options="[object Object]" class="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-                                <img src="assets/mobile.png" alt="web-development" class="w-16 h-16 object-contain">
-                                <h3 class="text-white text-[20px] font-bold text-center">Frontend Developer</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="xs:w-[30%] w-full">
-                        <div class="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card" style="opacity: 1; transform: none;">
-                            <div options="[object Object]" class="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-                                <img src="assets/web.png" alt="web-development" class="w-16 h-16 object-contain">
-                                <h3 class="text-white text-[20px] font-bold text-center">Magento Developer</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="xs:w-[30%] w-full">
-                        <div class="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card" style="opacity: 1; transform: none;">
-                            <div options="[object Object]" class="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-                                <img src="assets/backend.png" alt="web-development" class="w-16 h-16 object-contain">
-                                <h3 class="text-white text-[20px] font-bold text-center">UI Developer</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"><span class="hash-span" id="work">&nbsp;</span>
-                <div style="opacity: 1; transform: none;">
-                    <p class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider text-center">What I have done so far</p>
-                    <h2 class="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center">
-                        Work Experience.</h2>
-                </div>
-                <div class="mt-20 flex flex-col">
-                    <div class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
-                        <div id="" class="vertical-timeline-element"><span class="vertical-timeline-element-icon bounce-in" style="background: rgb(255, 255, 255); overflow: hidden">
-                                <div class="flex justify-center items-center w-full h-full"><img
-                                        src="assets/company/naj.png" alt="NAJ"
-                                        class="w-[100%] h-[100%]"></div>
-                            </span>
-                            <div class="vertical-timeline-element-content bounce-in" style="background: rgb(29, 24, 54); color: rgb(255, 255, 255);">
-                                <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(35, 38, 49);"></div>
-                                <div>
-                                    <h3 class="text-white text-[24px] font-bold">Senior Frontend Developer</h3>
-                                    <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">Nejoum Al Jazeera | UAE
-                                    </p>
-                                </div>
-                                <ul class="mt-5 list-disc ml-5 space-y-2">
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                                        In Naj i’m responsibe of building the operation dashboard and the main auction app, i also work on the carriers dashboard and handling logistics operation</li>
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                                        I also work on the internal systems implementing apis and required features for <strong>Fines Systsem</strong>, <strong>Profit & Loss</strong>, <strong>Damages</strong>, <strong>HR system</strong>
-                                    </li>
-                                </ul><span class="vertical-timeline-element-date">May 2024 - Current</span>
-                            </div>
-                        </div>
-                        <div id="" class="vertical-timeline-element"><span class="vertical-timeline-element-icon bounce-in" style="background: black;">
-                                <div class="flex justify-center items-center w-full h-full"><img
-                                        src="assets/company/tenten_pay_logo.jpg" alt="Tenten"
-                                        class="w-[100%] h-[100%] tenten-pay"></div>
-                            </span>
-                            <div class="vertical-timeline-element-content bounce-in" style="background: rgb(29, 24, 54); color: rgb(255, 255, 255);">
-                                <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(35, 38, 49);"></div>
-                                <div>
-                                    <h3 class="text-white text-[24px] font-bold">Frontend Developer</h3>
-                                    <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">TenTen Pay
-                                    </p>
-                                </div>
-                                <ul class="mt-5 list-disc ml-5 space-y-2">
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                                        TenTen Pay is a new financial entity with the sole purpose of making payments easier, faster and generally less confusing in Egypt. We're currently building our top-notch fintech product
-                                    </li>
-                                </ul><span class="vertical-timeline-element-date">Mar 2023 - May 2023</span>
-                            </div>
-                        </div>
-                        <div id="" class="vertical-timeline-element"><span class="vertical-timeline-element-icon bounce-in" style="background: white;">
-                                <div class="flex justify-center items-center w-full h-full"><img
-                                        src="assets/company/almanea.webp" alt="Torque"
-                                        class="w-[60%] h-[60%] object-contain"></div>
-                            </span>
-                            <div class="vertical-timeline-element-content bounce-in" style="background: rgb(29, 24, 54); color: rgb(255, 255, 255);">
-                                <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(35, 38, 49);"></div>
-                                <div>
-                                    <h3 class="text-white text-[24px] font-bold">Magento Frontend Developer</h3>
-                                    <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">Torque</p>
-                                </div>
-                                <ul class="mt-5 list-disc ml-5 space-y-2">
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">Developing, troubleshooting and maintaining client websites</li>
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">Build responsive websites that function perfectly on any device or browser size</li>
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">Collaborate with UX/UI Web Designers to bridge the gap – between graphical design and technical implementation in order to complete projects, websites, platforms and other web experiences
-                                    </li>
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">Optimize application for optimum speed and clean code to match standards</li>
-                                </ul><span class="vertical-timeline-element-date">Freelance</span>
-                            </div>
-                        </div>
-                        <div id="" class="vertical-timeline-element"><span class="vertical-timeline-element-icon bounce-in" style="background: white;">
-                                <div class="flex justify-center items-center w-full h-full"><img
-                                        src="assets/company/etmana.png" alt="Etmana"
-                                        class="w-[60%] h-[60%] object-contain"></div>
-                            </span>
-                            <div class="vertical-timeline-element-content bounce-in" style="background: rgb(29, 24, 54); color: rgb(255, 255, 255);">
-                                <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(35, 38, 49);"></div>
-                                <div>
-                                    <h3 class="text-white text-[24px] font-bold">Frontend Developer</h3>
-                                    <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">Etmana</p>
-                                </div>
-                                <ul class="mt-5 list-disc ml-5 space-y-2">
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">Developing, troubleshooting and maintaining Etmana e-commerce application</li>
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">Build responsive websites that function perfectly on any device or browser size</li>
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">Build responsive websites that function perfectly on any device or browser size</li>
-                                </ul><span class="vertical-timeline-element-date">Jan 2022 - Feb 2023</span>
-                            </div>
-                        </div>
-                        <div id="" class="vertical-timeline-element"><span class="vertical-timeline-element-icon bounce-in" style="background: white;">
-                                <div class="flex justify-center items-center w-full h-full"><img
-                                        src="assets/company/bevatel.png" alt="Bevatel"
-                                        class="w-[60%] h-[60%] object-contain"></div>
-                            </span>
-                            <div class="vertical-timeline-element-content bounce-in" style="background: rgb(29, 24, 54); color: rgb(255, 255, 255);">
-                                <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(35, 38, 49);"></div>
-                                <div>
-                                    <h3 class="text-white text-[24px] font-bold">Frontend Developer</h3>
-                                    <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">Bevatel</p>
-                                </div>
-                                <ul class="mt-5 list-disc ml-5 space-y-2">
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">Developing Unified Dashboard for call center solutions, it consists of CRM system, Report System, SMS &amp; live panel to monitor the agents and incomming support tickets</li>
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">I also worked on the main website and online store</li>
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">Collaborate with UX/UI Web Designers</li>
-                                </ul><span class="vertical-timeline-element-date">Aug 2020 - Jan 2022</span>
-                            </div>
-                        </div>
-                        <div id="" class="vertical-timeline-element"><span class="vertical-timeline-element-icon bounce-in" style="background: rgb(230, 222, 221);">
-                                <div class="flex justify-center items-center w-full h-full"><img
-                                        src="assets/company/ita.png" alt="IT Ambition"
-                                        class="w-[60%] h-[60%] object-contain"></div>
-                            </span>
-                            <div class="vertical-timeline-element-content bounce-in" style="background: rgb(29, 24, 54); color: rgb(255, 255, 255);">
-                                <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(35, 38, 49);"></div>
-                                <div>
-                                    <h3 class="text-white text-[24px] font-bold">Frontend Developer</h3>
-                                    <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">IT Ambition
-                                    </p>
-                                </div>
-                                <ul class="mt-5 list-disc ml-5 space-y-2">
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">Developing and maintaining web applications using React.js and other related technologies.Developing, troubleshooting and maintaining client websites</li>
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">I worked on several web plateforms like Magento, Wordpress, laravel and symphony</li>
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">Participating in code reviews and providing constructive feedback to other developers.</li>
-                                </ul><span class="vertical-timeline-element-date">Sep 2019 - Aug 2020</span>
-                            </div>
-                        </div>
-                        <div id="" class="vertical-timeline-element"><span class="vertical-timeline-element-icon bounce-in" style="background: rgb(230, 222, 221);">
-                                <div class="flex justify-center items-center w-full h-full"><img
-                                        src="assets/company/meta.png" alt="Tech Village"
-                                        class="w-[60%] h-[60%] object-contain"></div>
-                            </span>
-                            <div class="vertical-timeline-element-content bounce-in" style="background: rgb(29, 24, 54); color: rgb(255, 255, 255);">
-                                <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(35, 38, 49);"></div>
-                                <div>
-                                    <h3 class="text-white text-[24px] font-bold">Web Developer</h3>
-                                    <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">Tech Village
-                                    </p>
-                                </div>
-                                <ul class="mt-5 list-disc ml-5 space-y-2">
-                                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">Throught one Month internship i worked on a project based on Laravel as an application for what i learnt in NTI Scholarship</li>
-                                </ul><span class="vertical-timeline-element-date">Nov 2019 - Dec 2019</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0">
-                <span class="hash-span" id="">&nbsp;</span>
-                <div class="flex flex-row flex-wrap justify-center gap-10">
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="Bootstrap">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="assets/tech/bootstrap.jfif" alt="bootstrap">
-                        </div>
-                    </div>
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="shadCN">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="https://images.seeklogo.com/logo-png/51/1/shadcn-ui-logo-png_seeklogo-519786.png" alt="shadcn">
-                        </div>
-                    </div>
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="shadCN">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="assets/tech/git.png" alt="git">
-                        </div>
-                    </div>
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="Ant Design">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="assets/tech/antd.png" alt="antd">
-                        </div>
-                    </div>
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="JavaScript">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="assets/tech/javascript.png" alt="javascript">
-                        </div>
-                    </div>
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="typescript">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="assets/tech/typescript.png" alt="typescript">
-                        </div>
-                    </div>
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="Magento">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="assets/tech/magento.png" alt="magento">
-                        </div>
-                    </div>
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="ReactJS">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="assets/tech/reactjs.png" alt="reactjs">
-                        </div>
-                    </div>
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="VueJs">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="https://miro.medium.com/v2/resize:fit:400/0*K2ovtMil6X6nYrB5.png" alt="vue js">
-                        </div>
-                    </div>
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="Redux">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="assets/tech/redux.png" alt="redux">
-                        </div>
-                    </div>
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="Tailwind CSS">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="assets/tech/tailwind.png" alt="tailwind">
-                        </div>
-                    </div>
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="CSS">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="assets/tech/css.png" alt="css">
-                        </div>
-                    </div>
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="HTML">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="assets/tech/html.png" alt="html">
-                        </div>
-                    </div>
-                    <div class="w-28 h-28" data-bs-toggle="tooltip" title="Angular">
-                        <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-                            <img src="assets/tech/angular.png" alt="angular">
-                        </div>
-                    </div>
-                </div>
-                <div style="display: flex; justify-content: center; margin: 40px;">
-                    <a href="assets/Ahmed_Essam_Elsaeed.pdf" class="btn-grad">Download Resume</a>
-                </div>
-            </section>
-            <section class="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"><span class="hash-span" id="">&nbsp;</span>
-                <div style="opacity: 1; transform: none;">
-                    <p class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider ">My work</p>
-                    <h2 class="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">Projects.
-                    </h2>
-                </div>
-                <div class="w-full flex">
-                    <p class="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]" style="opacity: 1; transform: none;">Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems,
-                        work with different technologies, and manage projects effectively.</p>
-                </div>
-                <div class="mt-20 flex flex-wrap gap-7">
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <!-- Fancybox anchor link wrapping the image -->
-                                <a href="assets/projects/monorepo-1.png" data-fancybox="gallery" data-caption="Monorepo Project">
-                                    <img src="assets/projects/monorepo-1.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-
-                                <!-- Additional hidden images for the Fancybox gallery -->
-                                <a href="assets/projects/monorepo-2.png" data-fancybox="gallery" data-caption="Monorepo Project" style="display: none;">
-                                    <img src="assets/projects/monorepo-2.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <a href="assets/projects/monorepo-3.png" data-fancybox="gallery" data-caption="Monorepo Project" style="display: none;">
-                                    <img src="assets/projects/monorepo-3.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <a href="assets/projects/monorepo-4.png" data-fancybox="gallery" data-caption="Monorepo Project" style="display: none;">
-                                    <img src="assets/projects/monorepo-4.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <a href="assets/projects/monorepo-5.png" data-fancybox="gallery" data-caption="Monorepo Project" style="display: none;">
-                                    <img src="assets/projects/monorepo-5.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <a href="assets/projects/monorepo-6.png" data-fancybox="gallery" data-caption="Monorepo Project" style="display: none;">
-                                    <img src="assets/projects/monorepo-6.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <div class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <a href="https://www.figma.com/design/ErXrkFXAJlR4yXddA3sD32/Auction-(Site)?node-id=0-1&node-type=canvas" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                            <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Nejoum Monorepo Project</h3>
-                                <p class="mt-2 text-secondary text-[14px]">
-                                    In this project i implemented required services to handle the business logic i Fines system, Profit & Lose, Hr system and Damages Cars
-                                </p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Next js</p>
-                                <p class="text-[14px] pink-text-gradient">#React Js</p>
-                                <p class="text-[14px] blue-text-gradient">#ShadCn</p>
-                                <p class="text-[14px] Green-text-gradient">#react-query</p>
-                                <p class="text-[14px] blue-text-gradient">#Monorepo</p>
-                                <p class="text-[14px] pink-text-gradient">#zustand</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <!-- Fancybox anchor link wrapping the image -->
-                                <a href="assets/projects/monorepo-1.png" data-fancybox="gallery" data-caption="Nejoum Express">
-                                    <img src="assets/projects/monorepo-1.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-
-                                <!-- Additional hidden images for the Fancybox gallery -->
-                                <a href="assets/projects/monorepo-2.png" data-fancybox="gallery" data-caption="Nejoum Express" style="display: none;">
-                                    <img src="assets/projects/monorepo-2.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <a href="assets/projects/monorepo-3.png" data-fancybox="gallery" data-caption="Nejoum Express" style="display: none;">
-                                    <img src="assets/projects/monorepo-3.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <a href="assets/projects/monorepo-4.png" data-fancybox="gallery" data-caption="Nejoum Express" style="display: none;">
-                                    <img src="assets/projects/monorepo-4.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <a href="assets/projects/monorepo-5.png" data-fancybox="gallery" data-caption="Nejoum Express" style="display: none;">
-                                    <img src="assets/projects/monorepo-5.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <a href="assets/projects/monorepo-6.png" data-fancybox="gallery" data-caption="Nejoum Express" style="display: none;">
-                                    <img src="assets/projects/monorepo-6.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <div class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <a href="https://www.figma.com/design/ErXrkFXAJlR4yXddA3sD32/Auction-(Site)?node-id=0-1&node-type=canvas" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                            <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Nejoum Express</h3>
-                                <p class="mt-2 text-secondary text-[14px]">
-                                    Nejoum Express is a system to manage and handle shiping cars from America and Europe to Warehouses in UAE
-                                </p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] pink-text-gradient">#Vue Js</p>
-                                <p class="text-[14px] blue-text-gradient">#tailwindcss</p>
-                                <p class="text-[14px] Green-text-gradient">#react-query</p>
-                                <p class="text-[14px] pink-text-gradient">#typescript</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <!-- Fancybox anchor link wrapping the image -->
-                                <a href="assets/projects/naj.png" data-fancybox="gallery" data-caption="Naj Auctions Project">
-                                    <img src="assets/projects/naj.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <div class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <a href="https://www.figma.com/design/ErXrkFXAJlR4yXddA3sD32/Auction-(Site)?node-id=0-1&node-type=canvas" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                            <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Naj Auctions</h3>
-                                <p class="mt-2 text-secondary text-[14px]">
-                                    Naj Auctions is a Next.js-powered website offering a comprehensive platform for users to participate in car auctions. It allows users to place bids, manage their profiles, and sell their own vehicles. With a user-friendly interface and secure transaction
-                                    handling, Naj Auctions simplifies the auction process for both buyers and sellers in the automotive market
-                                </p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Next js</p>
-                                <p class="text-[14px] pink-text-gradient">#styled components</p>
-                                <p class="text-[14px] blue-text-gradient">#Material Design</p>
-                                <p class="text-[14px] Green-text-gradient">#Redux</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/tenten.png" data-fancybox="gallery" data-caption="Fees Engine | Injected in TenTen-pay dashboard and other 2 dashboards">
-
-                                    <img src="assets/projects/tenten.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <div class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <a href="#" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                            <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Fees Engine Micro-Frontend</h3>
-                                <p class="mt-2 text-secondary text-[14px]">
-                                    The Fee Engine is a micro-frontend-based service designed to calculate transaction fees dynamically based on specific providers. This modular approach allows the engine to be integrated seamlessly across three different dashboards, ensuring consistent
-                                    and efficient fee calculations tailored to various business needs
-                                </p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#React</p>
-                                <p class="text-[14px] pink-text-gradient">#Redux</p>
-                                <p class="text-[14px] green-text-gradient">#Module Federation</p>
-                                <p class="text-[14px] blue-text-gradient">#GIT Submodule</p>
-                                <p class="text-[14px] pink-text-gradient">#styled components</p>
-                                <p class="text-[14px] blue-text-gradient">#Ant Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/marine.png" data-fancybox="gallery" data-caption="Marine Cleaning Services <br/> <a target='_blank' href='https://www.marinecleaningservice.ca/'>Visit Now</a>">
-
-                                    <img src="assets/projects/marine.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <div class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <a href="https://www.marinecleaningservice.ca/" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                            <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Marine Cleaning Services</h3>
-                                <p class="mt-2 text-secondary text-[14px]">
-                                    My role as a frontend developer on the Marine Cleaning Service project, I optimized the user interface and ensured a smooth user experience, focusing on responsiveness and visual appeal for marine service clients.
-                                </p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#React</p>
-                                <p class="text-[14px] green-text-gradient">#Next</p>
-                                <p class="text-[14px] pink-text-gradient">#styled components</p>
-                                <p class="text-[14px] blue-text-gradient">#Ant Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/tenten-website.png" data-fancybox="gallery" data-caption="TenTen Pay Website <br/> <a target='_blank' href='https://tenten-pay.com/'>Visit Now</a>">
-
-                                    <img src="assets/projects/tenten-website.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <div class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <a href="https://tenten-pay.com/" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                            <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">TenTen Pay Website</h3>
-                                <p class="mt-2 text-secondary text-[14px]">
-                                    As a frontend developer on the Tenten Pay project, I crafted a user-friendly interface for seamless financial transactions, focusing on accessibility, intuitive navigation, and mobile responsiveness.
-                                </p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#React</p>
-                                <p class="text-[14px] green-text-gradient">#Next</p>
-                                <p class="text-[14px] pink-text-gradient">#styled components</p>
-                                <p class="text-[14px] blue-text-gradient">#Jest</p>
-                                <p class="text-[14px] green-text-gradient">#Ant Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/tenten.png" data-fancybox="gallery" data-caption="TenTen Pay Main Dashboard">
-
-                                    <img src="assets/projects/tenten.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <div class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">TenTen Pay</h3>
-                                <p class="mt-2 text-secondary text-[14px]">In this project, I am actively involved in integrating essential services into our dashboard, enhancing its functionality and providing users with a comprehensive and streamlined experience.
-
-                                </p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#React</p>
-                                <p class="text-[14px] pink-text-gradient">#Redux</p>
-                                <p class="text-[14px] green-text-gradient">#Typescript</p>
-                                <p class="text-[14px] pink-text-gradient">#styled components</p>
-                                <p class="text-[14px] blue-text-gradient">#Jest</p>
-                                <p class="text-[14px] green-text-gradient">#Ant Design</p>
-                                <p class="text-[14px] blue-text-gradient">#cypress unit testing</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/travel.png" data-fancybox="gallery" data-caption="Travel Advisor">
-
-                                    <img src="assets/projects/travel.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <div class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Travel Advisor</h3>
-                                <p class="mt-2 text-secondary text-[14px]">React App that take user location and show the nearest restaurants and hotels</p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#React</p>
-                                <p class="text-[14px] green-text-gradient">#Material Design</p>
-                                <p class="text-[14px] pink-text-gradient">#Axios</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/almanea.png" data-fancybox="gallery" data-caption="Al Manea Project <br/> <a target='_blank' href='https://www.marinecleaningservice.ca/'>Visit Now</a>">
-
-                                    <img src="assets/projects/almanea.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <div class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Al Manea</h3>
-                                <p class="mt-2 text-secondary text-[14px]">Al Manea is an e-commerce stablished in KSA and based on Magento, In this project i developed the website to match XD and i also worked on some backend tasks</p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Magento2</p>
-                                <p class="text-[14px] green-text-gradient">#Javascript</p>
-                                <p class="text-[14px] pink-text-gradient">#PHP</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/etmanaP.png" data-fancybox="gallery" data-caption="Etmana Project <br/> <a target='_blank' href='https://etmana.com/'>Visit Now</a>">
-
-                                    <img src="assets/projects/etmanaP.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <a href="https://etmana.com/" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain"></a>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Etmana</h3>
-                                <p class="mt-2 text-secondary text-[14px]">In this project i worked on two phases, Magento 2 and Angular, In Magento version I developed the website to match XD and i also kept maintaining the wesbiste In Angular version i worked on the website and admin , integrating
-                                    Apis and designing the responsive design</p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Angular</p>
-                                <p class="text-[14px] green-text-gradient">#RXJX</p>
-                                <p class="text-[14px] pink-text-gradient">#PrimeNG</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/moviep.jpg" data-fancybox="gallery" data-caption="Movie plateform">
-
-                                    <img src="assets/projects/moviep.jpg" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <div class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Movie plateform</h3>
-                                <p class="mt-2 text-secondary text-[14px]">this is a Movie plateform, i created this website to apply some points like search and pagenation and integratingapis with different way</p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#React</p>
-                                <p class="text-[14px] green-text-gradient">#Axios</p>
-                                <p class="text-[14px] pink-text-gradient">#Google Apis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/zegnaP.png" data-fancybox="gallery" data-caption="Zegnia e-commerce app <br/> <a target='_blank' href='https://www.zegna.com/'>Visit Now</a>">
-
-                                    <img src="assets/projects/zegnaP.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <a href="https://www.zegna.com/" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain"></a>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Zegna</h3>
-                                <p class="mt-2 text-secondary text-[14px]">Zegna is an ecommerce application based on Magento In this project i worked on customer account, cms pages, search behavior, popups and product catalog pages.</p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Magento</p>
-                                <p class="text-[14px] green-text-gradient">#Javascript</p>
-                                <p class="text-[14px] pink-text-gradient">#PHP</p>
-                                <p class="text-[14px] pink-text-gradient">#Less</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/babolatP.png" data-fancybox="gallery" data-caption="Babolat e-commerce app <br/> <a target='_blank' href='https://babolat.ae/'>Visit Now</a>">
-
-                                    <img src="assets/projects/babolatP.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <a href="https://babolat.ae/" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain"></a>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Babolat</h3>
-                                <p class="mt-2 text-secondary text-[14px]">Babolat is an ecommerce application based on Magento, I prepaired the theme to match global website</p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Magento</p>
-                                <p class="text-[14px] green-text-gradient">#supabase</p>
-                                <p class="text-[14px] pink-text-gradient">#css</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/bevatelP.png" data-fancybox="gallery" data-caption="Bevatel | Call-Center Solutions <br/> <a target='_blank' href='https://bevatel.com/'>Visit Now</a>">
-
-                                    <img src="assets/projects/bevatelP.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <a href="https://bevatel.com/" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain"></a>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Bevatel</h3>
-                                <p class="mt-2 text-secondary text-[14px]">It's a business website for a callcenter solutions company, i was responsibe of the whole website, so i created everything using php, i also helped SEO team to get speed of 2.5s on 4G</p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Bootstrap</p>
-                                <p class="text-[14px] green-text-gradient">#Javascript</p>
-                                <p class="text-[14px] pink-text-gradient">#Lottiefiles</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/ocodaP.png" data-fancybox="gallery" data-caption="Ocoda Agency Project <br/> <a target='_blank' href='https://ocoda.com/'>Visit Now</a>">
-
-                                    <img src="assets/projects/ocodaP.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <a href="https://ocoda.com/" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain"></a>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Ocoda</h3>
-                                <p class="mt-2 text-secondary text-[14px]">Ocoda is a marketing agency stablished in KSA I built this website from scratch and i handled SEO standards to obtain high speed over desktop and 4G</p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Bootstrap</p>
-                                <p class="text-[14px] green-text-gradient">#Javascript</p>
-                                <p class="text-[14px] pink-text-gradient">#Lottiefiles</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/kufa.png" data-fancybox="gallery" data-caption="Kufa Restaurant Project <br/> <a target='_blank' href='https://kufa.sa/'>Visit Now</a>">
-
-                                    <img src="assets/projects/kufa.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <a href="https://kufa.sa/" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain"></a>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Kufa</h3>
-                                <p class="mt-2 text-secondary text-[14px]">Kufa is a restaurant in KSA and here is the official website, It presents the food menu, branches and contact</p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Bootstrap</p>
-                                <p class="text-[14px] green-text-gradient">#Javascript</p>
-                                <p class="text-[14px] pink-text-gradient">#Wordpress</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/dashboard.png" data-fancybox="gallery" data-caption="Bevatel Main Dashboard">
-
-                                    <img src="assets/projects/dashboard.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <a href="https://cloud.bevatel.com/" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain"></a>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Unified Dashboard</h3>
-                                <p class="mt-2 text-secondary text-[14px]">In this project i applied the identity on bevatel dashboard, it's a dashboard that consists of many solutions like SMS system, report system, CRM system and LivePanel, i also worked on every single system, development and
-                                    designing
-                                </p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Bootstrap</p>
-                                <p class="text-[14px] green-text-gradient">#Javascript</p>
-                                <p class="text-[14px] pink-text-gradient">#PHP</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/sms.png" data-fancybox="gallery" data-caption="SMS Dashboard">
-
-                                    <img src="assets/projects/sms.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <a href="https://sms.bevatel.com/" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain"></a>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">SMS System </h3>
-                                <p class="mt-2 text-secondary text-[14px]">It's a live solution included in the Unified dashboard, it allows companies to send and recieve messages around the middle east.
-                                </p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Bootstrap</p>
-                                <p class="text-[14px] green-text-gradient">#Javascript</p>
-                                <p class="text-[14px] pink-text-gradient">#Laravel</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/hojuzat.webp" data-fancybox="gallery" data-caption="Hojuzat Mobile App <br/> <a target='_blank' href='https://play.google.com/store/apps/details?id=hojuzat.v3'>Visit Now</a>">
-
-                                    <img src="assets/projects/hojuzat.webp" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <a href="https://play.google.com/store/apps/details?id=hojuzat.v3" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain"></a>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Hojuzat </h3>
-                                <p class="mt-2 text-secondary text-[14px]">This is a small project that i built for a traveling agency It just a business application that presents the lastest offers and the contact info.</p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Flutter</p>
-                                <p class="text-[14px] green-text-gradient">#dart</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/fashion.png" data-fancybox="gallery" data-caption="Fashion App | Magento2 <br/> <a target='_blank' href='https://clothes.itambition.com'>Visit Now</a>">
-
-                                    <img src="assets/projects/fashion.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <a href="https://clothes.itambition.com" class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain"></a>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Fashion Store </h3>
-                                <p class="mt-2 text-secondary text-[14px]">This is R&amp;D project based on Magento, i built around 5 projects with different frontend design on several ideas like , Bikes, Toys, Pharmacy and this one is for Fashion I handled Installation, the responsive design
-                                    and maintenance of the app</p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Magento</p>
-                                <p class="text-[14px] green-text-gradient">#Javascript</p>
-                                <p class="text-[14px] pink-text-gradient">#PHP</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="opacity: 1; transform: none;">
-                        <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-                            <div class="relative w-full h-[230px]">
-                                <a href="assets/projects/rest.png" data-fancybox="gallery" data-caption="Delivery Project | Magento2 <br/> <a target='_blank' href='https://clothes.itambition.com'>Visit Now</a>">
-
-                                    <img src="assets/projects/rest.png" alt="project_image" class="w-full h-full object-cover rounded-2xl">
-
-                                </a>
-                                <div class="absolute inset-0 flex justify-end m-3 card-img_hover">
-                                    <a class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                                        <img src="assets/github.png" alt="Visit Now" class="w-1/2 h-1/2 object-contain"></a>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <h3 class="text-white font-bold text-[24px]">Delivery</h3>
-                                <p class="mt-2 text-secondary text-[14px]">This is R&amp;D project based on Magento, i built around 5 projects with different frontend design on several ideas like , Bikes, Toys, Pharmacy and this one is for Fashion I handled Installation, the responsive design
-                                    and maintenance of the app</p>
-                            </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <p class="text-[14px] blue-text-gradient">#Magento</p>
-                                <p class="text-[14px] green-text-gradient">#Javascript</p>
-                                <p class="text-[14px] pink-text-gradient">#PHP</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="relative z-0">
-                <section class="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"><span class="hash-span" id="contact">&nbsp;</span>
-                    <div>
-                        <div class="flex-[0.75] bg-black-100 p-8 rounded-2xl d-flex justify-content-center" style="transform: translateX(0%) translateY(0px) translateZ(0px); text-align: center;">
-                            <p class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">Get in touch
-                            </p>
-                            <h6 class="text-white"> Thank You</h6>
-                        </div>
-                    </div>
-                </section>
-
+          </nav>
+          <section class="relative w-full h-screen mx-auto">
+            <div
+              class="absolute inset-0 top-[120px] max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-start gap-5"
+            >
+              <div class="flex flex-col justify-center items-center mt-5">
+                <div class="w-5 h-5 rounded-full bg-[#915EFF]"></div>
+                <div class="w-1 sm:h-80 h-40 violet-gradient"></div>
+              </div>
+              <div>
+                <h1
+                  class="font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2 text-white"
+                >
+                  Hi, I'm <span class="text-[#915EFF]">Essam</span>
+                </h1>
+                <p
+                  class="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 text-white-100"
+                >
+                  I develop user <br class="sm:block hidden" />interfaces and
+                  web applications
+                </p>
+              </div>
             </div>
+            <div
+              style="
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                pointer-events: auto;
+                touch-action: none;
+              "
+            >
+              <div
+                style="
+                  width: 100%;
+                  height: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player
+                  src="https://lottie.host/3a53ecd2-b419-4273-a405-cb8e210d6cdb/ceppyC2fqY.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 400px; height: 400px"
+                  loop
+                  autoplay
+                  direction="1"
+                  mode="normal"
+                ></lottie-player>
+              </div>
+            </div>
+            <div
+              class="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center"
+            >
+              <a href="#about">
+                <div
+                  class="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2"
+                >
+                  <div
+                    class="w-3 h-3 rounded-full bg-secondary mb-1"
+                    style="transform: translateY(15.5082px) translateZ(0px)"
+                  ></div>
+                </div>
+              </a>
+            </div>
+          </section>
         </div>
+        <section
+          class="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"
+        >
+          <span class="hash-span" id="about">&nbsp;</span>
+          <div style="opacity: 1; transform: none">
+            <p
+              class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider"
+            >
+              Introduction
+            </p>
+            <h2
+              class="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"
+            >
+              Overview.
+            </h2>
+          </div>
+          <p
+            class="mt-4 text-secondary text-[17px] leading-[30px]"
+            style="opacity: 1; transform: none"
+          >
+            My name is Essam, and I bring over six years of experience as a
+            Frontend Developer. I hold a Bachelor's degree in Mechatronics and
+            Automation, as well as an Associate Degree in Web Development from
+            the Ministry of Telecommunication's NTI in Egypt.
+          </p>
+          <p
+            class="mt-4 text-secondary text-[17px] leading-[30px]"
+            style="opacity: 1; transform: none"
+          >
+            Throughout my career, I have worked extensively with modern frontend
+            technologies including React.js, Next.js, Vue.js, Angular, Redux,
+            and Jest. I am currently expanding my expertise by learning Cypress.
+            I have strong experience building complex applications such as
+            micro-frontend systems, fintech platforms, gold investment
+            solutions, bill payment systems, and e-commerce websites.
+          </p>
+          <p
+            class="mt-4 text-secondary text-[17px] leading-[30px]"
+            style="opacity: 1; transform: none"
+          >
+            I’m also highly adaptable when it comes to technology and always
+            eager to learn. My background includes work on various open-source
+            platforms such as WordPress, Magento, OpenCart, and Laravel.
+          </p>
+          <div class="mt-20 flex flex-wrap gap-10">
+            <div
+              class="xs:w-[30%] w-full"
+              style="
+                transform: perspective(1000px) rotateX(0deg) rotateY(0deg)
+                  scale3d(1, 1, 1);
+              "
+            >
+              <div
+                class="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+                style="opacity: 1; transform: none"
+              >
+                <div
+                  options="[object Object]"
+                  class="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+                >
+                  <img
+                    src="assets/mobile.png"
+                    alt="web-development"
+                    class="w-16 h-16 object-contain"
+                  />
+                  <h3 class="text-white text-[20px] font-bold text-center">
+                    Frontend Developer
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="xs:w-[30%] w-full">
+              <div
+                class="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+                style="opacity: 1; transform: none"
+              >
+                <div
+                  options="[object Object]"
+                  class="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+                >
+                  <img
+                    src="assets/web.png"
+                    alt="web-development"
+                    class="w-16 h-16 object-contain"
+                  />
+                  <h3 class="text-white text-[20px] font-bold text-center">
+                    Magento Developer
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="xs:w-[30%] w-full">
+              <div
+                class="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+                style="opacity: 1; transform: none"
+              >
+                <div
+                  options="[object Object]"
+                  class="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+                >
+                  <img
+                    src="assets/backend.png"
+                    alt="web-development"
+                    class="w-16 h-16 object-contain"
+                  />
+                  <h3 class="text-white text-[20px] font-bold text-center">
+                    UI Developer
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"
+        >
+          <span class="hash-span" id="work">&nbsp;</span>
+          <div style="opacity: 1; transform: none">
+            <p
+              class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider text-center"
+            >
+              What I have done so far
+            </p>
+            <h2
+              class="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] text-center"
+            >
+              Work Experience.
+            </h2>
+          </div>
+          <div class="mt-20 flex flex-col">
+            <div
+              class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns"
+            >
+              <div id="" class="vertical-timeline-element">
+                <span
+                  class="vertical-timeline-element-icon bounce-in"
+                  style="background: rgb(255, 255, 255); overflow: hidden"
+                >
+                  <div class="flex justify-center items-center w-full h-full">
+                    <img
+                      src="assets/company/naj.png"
+                      alt="NAJ"
+                      class="w-[100%] h-[100%]"
+                    />
+                  </div>
+                </span>
+                <div
+                  class="vertical-timeline-element-content bounce-in"
+                  style="background: rgb(29, 24, 54); color: rgb(255, 255, 255)"
+                >
+                  <div
+                    class="vertical-timeline-element-content-arrow"
+                    style="border-right: 7px solid rgb(35, 38, 49)"
+                  ></div>
+                  <div>
+                    <h3 class="text-white text-[24px] font-bold">
+                      Senior Frontend Developer
+                    </h3>
+                    <p
+                      class="text-secondary text-[16px] font-semibold"
+                      style="margin: 0px"
+                    >
+                      Nejoum Al Jazeera | UAE
+                    </p>
+                  </div>
+                  <ul class="mt-5 list-disc ml-5 space-y-2">
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      In Naj i’m responsibe of building the operation dashboard
+                      and the main auction app, i also work on the carriers
+                      dashboard and handling logistics operation
+                    </li>
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      I also work on the internal systems implementing apis and
+                      required features for <strong>Fines Systsem</strong>,
+                      <strong>Profit & Loss</strong>, <strong>Damages</strong>,
+                      <strong>HR system</strong>
+                    </li>
+                  </ul>
+                  <span class="vertical-timeline-element-date"
+                    >May 2024 - Current</span
+                  >
+                </div>
+              </div>
+              <div id="" class="vertical-timeline-element">
+                <span
+                  class="vertical-timeline-element-icon bounce-in"
+                  style="background: black"
+                >
+                  <div class="flex justify-center items-center w-full h-full">
+                    <img
+                      src="assets/company/tenten_pay_logo.jpg"
+                      alt="Tenten"
+                      class="w-[100%] h-[100%] tenten-pay"
+                    />
+                  </div>
+                </span>
+                <div
+                  class="vertical-timeline-element-content bounce-in"
+                  style="background: rgb(29, 24, 54); color: rgb(255, 255, 255)"
+                >
+                  <div
+                    class="vertical-timeline-element-content-arrow"
+                    style="border-right: 7px solid rgb(35, 38, 49)"
+                  ></div>
+                  <div>
+                    <h3 class="text-white text-[24px] font-bold">
+                      Frontend Developer
+                    </h3>
+                    <p
+                      class="text-secondary text-[16px] font-semibold"
+                      style="margin: 0px"
+                    >
+                      TenTen Pay
+                    </p>
+                  </div>
+                  <ul class="mt-5 list-disc ml-5 space-y-2">
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      TenTen Pay is a new financial entity with the sole purpose
+                      of making payments easier, faster and generally less
+                      confusing in Egypt. We're currently building our top-notch
+                      fintech product
+                    </li>
+                  </ul>
+                  <span class="vertical-timeline-element-date"
+                    >Mar 2023 - May 2023</span
+                  >
+                </div>
+              </div>
+              <div id="" class="vertical-timeline-element">
+                <span
+                  class="vertical-timeline-element-icon bounce-in"
+                  style="background: white"
+                >
+                  <div class="flex justify-center items-center w-full h-full">
+                    <img
+                      src="assets/company/almanea.webp"
+                      alt="Torque"
+                      class="w-[60%] h-[60%] object-contain"
+                    />
+                  </div>
+                </span>
+                <div
+                  class="vertical-timeline-element-content bounce-in"
+                  style="background: rgb(29, 24, 54); color: rgb(255, 255, 255)"
+                >
+                  <div
+                    class="vertical-timeline-element-content-arrow"
+                    style="border-right: 7px solid rgb(35, 38, 49)"
+                  ></div>
+                  <div>
+                    <h3 class="text-white text-[24px] font-bold">
+                      Magento Frontend Developer
+                    </h3>
+                    <p
+                      class="text-secondary text-[16px] font-semibold"
+                      style="margin: 0px"
+                    >
+                      Torque
+                    </p>
+                  </div>
+                  <ul class="mt-5 list-disc ml-5 space-y-2">
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      Developing, troubleshooting and maintaining client
+                      websites
+                    </li>
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      Build responsive websites that function perfectly on any
+                      device or browser size
+                    </li>
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      Collaborate with UX/UI Web Designers to bridge the gap –
+                      between graphical design and technical implementation in
+                      order to complete projects, websites, platforms and other
+                      web experiences
+                    </li>
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      Optimize application for optimum speed and clean code to
+                      match standards
+                    </li>
+                  </ul>
+                  <span class="vertical-timeline-element-date">Freelance</span>
+                </div>
+              </div>
+              <div id="" class="vertical-timeline-element">
+                <span
+                  class="vertical-timeline-element-icon bounce-in"
+                  style="background: white"
+                >
+                  <div class="flex justify-center items-center w-full h-full">
+                    <img
+                      src="assets/company/etmana.png"
+                      alt="Etmana"
+                      class="w-[60%] h-[60%] object-contain"
+                    />
+                  </div>
+                </span>
+                <div
+                  class="vertical-timeline-element-content bounce-in"
+                  style="background: rgb(29, 24, 54); color: rgb(255, 255, 255)"
+                >
+                  <div
+                    class="vertical-timeline-element-content-arrow"
+                    style="border-right: 7px solid rgb(35, 38, 49)"
+                  ></div>
+                  <div>
+                    <h3 class="text-white text-[24px] font-bold">
+                      Frontend Developer
+                    </h3>
+                    <p
+                      class="text-secondary text-[16px] font-semibold"
+                      style="margin: 0px"
+                    >
+                      Etmana
+                    </p>
+                  </div>
+                  <ul class="mt-5 list-disc ml-5 space-y-2">
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      Developing, troubleshooting and maintaining Etmana
+                      e-commerce application
+                    </li>
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      Build responsive websites that function perfectly on any
+                      device or browser size
+                    </li>
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      Build responsive websites that function perfectly on any
+                      device or browser size
+                    </li>
+                  </ul>
+                  <span class="vertical-timeline-element-date"
+                    >Jan 2022 - Feb 2023</span
+                  >
+                </div>
+              </div>
+              <div id="" class="vertical-timeline-element">
+                <span
+                  class="vertical-timeline-element-icon bounce-in"
+                  style="background: white"
+                >
+                  <div class="flex justify-center items-center w-full h-full">
+                    <img
+                      src="assets/company/bevatel.png"
+                      alt="Bevatel"
+                      class="w-[60%] h-[60%] object-contain"
+                    />
+                  </div>
+                </span>
+                <div
+                  class="vertical-timeline-element-content bounce-in"
+                  style="background: rgb(29, 24, 54); color: rgb(255, 255, 255)"
+                >
+                  <div
+                    class="vertical-timeline-element-content-arrow"
+                    style="border-right: 7px solid rgb(35, 38, 49)"
+                  ></div>
+                  <div>
+                    <h3 class="text-white text-[24px] font-bold">
+                      Frontend Developer
+                    </h3>
+                    <p
+                      class="text-secondary text-[16px] font-semibold"
+                      style="margin: 0px"
+                    >
+                      Bevatel
+                    </p>
+                  </div>
+                  <ul class="mt-5 list-disc ml-5 space-y-2">
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      Developing Unified Dashboard for call center solutions, it
+                      consists of CRM system, Report System, SMS &amp; live
+                      panel to monitor the agents and incomming support tickets
+                    </li>
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      I also worked on the main website and online store
+                    </li>
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      Collaborate with UX/UI Web Designers
+                    </li>
+                  </ul>
+                  <span class="vertical-timeline-element-date"
+                    >Aug 2020 - Jan 2022</span
+                  >
+                </div>
+              </div>
+              <div id="" class="vertical-timeline-element">
+                <span
+                  class="vertical-timeline-element-icon bounce-in"
+                  style="background: rgb(230, 222, 221)"
+                >
+                  <div class="flex justify-center items-center w-full h-full">
+                    <img
+                      src="assets/company/ita.png"
+                      alt="IT Ambition"
+                      class="w-[60%] h-[60%] object-contain"
+                    />
+                  </div>
+                </span>
+                <div
+                  class="vertical-timeline-element-content bounce-in"
+                  style="background: rgb(29, 24, 54); color: rgb(255, 255, 255)"
+                >
+                  <div
+                    class="vertical-timeline-element-content-arrow"
+                    style="border-right: 7px solid rgb(35, 38, 49)"
+                  ></div>
+                  <div>
+                    <h3 class="text-white text-[24px] font-bold">
+                      Frontend Developer
+                    </h3>
+                    <p
+                      class="text-secondary text-[16px] font-semibold"
+                      style="margin: 0px"
+                    >
+                      IT Ambition
+                    </p>
+                  </div>
+                  <ul class="mt-5 list-disc ml-5 space-y-2">
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      Developing and maintaining web applications using React.js
+                      and other related technologies.Developing, troubleshooting
+                      and maintaining client websites
+                    </li>
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      I worked on several web plateforms like Magento,
+                      Wordpress, laravel and symphony
+                    </li>
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      Participating in code reviews and providing constructive
+                      feedback to other developers.
+                    </li>
+                  </ul>
+                  <span class="vertical-timeline-element-date"
+                    >Sep 2019 - Aug 2020</span
+                  >
+                </div>
+              </div>
+              <div id="" class="vertical-timeline-element">
+                <span
+                  class="vertical-timeline-element-icon bounce-in"
+                  style="background: rgb(230, 222, 221)"
+                >
+                  <div class="flex justify-center items-center w-full h-full">
+                    <img
+                      src="assets/company/meta.png"
+                      alt="Tech Village"
+                      class="w-[60%] h-[60%] object-contain"
+                    />
+                  </div>
+                </span>
+                <div
+                  class="vertical-timeline-element-content bounce-in"
+                  style="background: rgb(29, 24, 54); color: rgb(255, 255, 255)"
+                >
+                  <div
+                    class="vertical-timeline-element-content-arrow"
+                    style="border-right: 7px solid rgb(35, 38, 49)"
+                  ></div>
+                  <div>
+                    <h3 class="text-white text-[24px] font-bold">
+                      Web Developer
+                    </h3>
+                    <p
+                      class="text-secondary text-[16px] font-semibold"
+                      style="margin: 0px"
+                    >
+                      Tech Village
+                    </p>
+                  </div>
+                  <ul class="mt-5 list-disc ml-5 space-y-2">
+                    <li class="text-white-100 text-[14px] pl-1 tracking-wider">
+                      Throught one Month internship i worked on a project based
+                      on Laravel as an application for what i learnt in NTI
+                      Scholarship
+                    </li>
+                  </ul>
+                  <span class="vertical-timeline-element-date"
+                    >Nov 2019 - Dec 2019</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"
+        >
+          <span class="hash-span" id="">&nbsp;</span>
+          <div class="flex flex-row flex-wrap justify-center gap-10">
+            <div class="w-28 h-28" data-bs-toggle="tooltip" title="Bootstrap">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img src="assets/tech/bootstrap.jfif" alt="bootstrap" />
+              </div>
+            </div>
+            <div class="w-28 h-28" data-bs-toggle="tooltip" title="shadCN">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  src="https://images.seeklogo.com/logo-png/51/1/shadcn-ui-logo-png_seeklogo-519786.png"
+                  alt="shadcn"
+                />
+              </div>
+            </div>
+            <div class="w-28 h-28" data-bs-toggle="tooltip" title="shadCN">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img src="assets/tech/git.png" alt="git" />
+              </div>
+            </div>
+            <div class="w-28 h-28" data-bs-toggle="tooltip" title="Ant Design">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img src="assets/tech/antd.png" alt="antd" />
+              </div>
+            </div>
+            <div class="w-28 h-28" data-bs-toggle="tooltip" title="JavaScript">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img src="assets/tech/javascript.png" alt="javascript" />
+              </div>
+            </div>
+            <div class="w-28 h-28" data-bs-toggle="tooltip" title="typescript">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img src="assets/tech/typescript.png" alt="typescript" />
+              </div>
+            </div>
+            <div class="w-28 h-28" data-bs-toggle="tooltip" title="Magento">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img src="assets/tech/magento.png" alt="magento" />
+              </div>
+            </div>
+            <div class="w-28 h-28" data-bs-toggle="tooltip" title="ReactJS">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img src="assets/tech/reactjs.png" alt="reactjs" />
+              </div>
+            </div>
+            <div class="w-28 h-28" data-bs-toggle="tooltip" title="VueJs">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  src="https://miro.medium.com/v2/resize:fit:400/0*K2ovtMil6X6nYrB5.png"
+                  alt="vue js"
+                />
+              </div>
+            </div>
+            <div class="w-28 h-28" data-bs-toggle="tooltip" title="Redux">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img src="assets/tech/redux.png" alt="redux" />
+              </div>
+            </div>
+            <div
+              class="w-28 h-28"
+              data-bs-toggle="tooltip"
+              title="Tailwind CSS"
+            >
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img src="assets/tech/tailwind.png" alt="tailwind" />
+              </div>
+            </div>
+            <div class="w-28 h-28" data-bs-toggle="tooltip" title="CSS">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img src="assets/tech/css.png" alt="css" />
+              </div>
+            </div>
+            <div class="w-28 h-28" data-bs-toggle="tooltip" title="HTML">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img src="assets/tech/html.png" alt="html" />
+              </div>
+            </div>
+            <div class="w-28 h-28" data-bs-toggle="tooltip" title="Angular">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                "
+              >
+                <img src="assets/tech/angular.png" alt="angular" />
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center; margin: 40px">
+            <a href="assets/Ahmed_Essam_Elsaeed.pdf" class="btn-grad"
+              >Download Resume</a
+            >
+          </div>
+        </section>
+        <section
+          class="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"
+        >
+          <span class="hash-span" id="">&nbsp;</span>
+          <div style="opacity: 1; transform: none">
+            <p
+              class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider"
+            >
+              My work
+            </p>
+            <h2
+              class="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"
+            >
+              Projects.
+            </h2>
+          </div>
+          <div class="w-full flex">
+            <p
+              class="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+              style="opacity: 1; transform: none"
+            >
+              Following projects showcases my skills and experience through
+              real-world examples of my work. Each project is briefly described
+              with links to code repositories and live demos in it. It reflects
+              my ability to solve complex problems, work with different
+              technologies, and manage projects effectively.
+            </p>
+          </div>
+          <div class="mt-20 flex flex-wrap gap-7">
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <!-- Fancybox anchor link wrapping the image -->
+                  <a
+                    href="assets/projects/monorepo-1.png"
+                    data-fancybox="gallery"
+                    data-caption="Monorepo Project"
+                  >
+                    <img
+                      src="assets/projects/monorepo-1.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+
+                  <!-- Additional hidden images for the Fancybox gallery -->
+                  <a
+                    href="assets/projects/monorepo-2.png"
+                    data-fancybox="gallery"
+                    data-caption="Monorepo Project"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/monorepo-2.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <a
+                    href="assets/projects/monorepo-3.png"
+                    data-fancybox="gallery"
+                    data-caption="Monorepo Project"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/monorepo-3.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <a
+                    href="assets/projects/monorepo-4.png"
+                    data-fancybox="gallery"
+                    data-caption="Monorepo Project"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/monorepo-4.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <a
+                    href="assets/projects/monorepo-5.png"
+                    data-fancybox="gallery"
+                    data-caption="Monorepo Project"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/monorepo-5.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <a
+                    href="assets/projects/monorepo-6.png"
+                    data-fancybox="gallery"
+                    data-caption="Monorepo Project"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/monorepo-6.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <div
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <a
+                        href="https://www.figma.com/design/ErXrkFXAJlR4yXddA3sD32/Auction-(Site)?node-id=0-1&node-type=canvas"
+                        class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                      >
+                        <img
+                          src="assets/github.png"
+                          alt="Visit Now"
+                          class="w-1/2 h-1/2 object-contain"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">
+                    Nejoum Monorepo Project
+                  </h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    In this project i implemented required services to handle
+                    the business logic i Fines system, Profit & Lose, Hr system
+                    and Damages Cars
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Next js</p>
+                  <p class="text-[14px] pink-text-gradient">#React Js</p>
+                  <p class="text-[14px] blue-text-gradient">#ShadCn</p>
+                  <p class="text-[14px] Green-text-gradient">#react-query</p>
+                  <p class="text-[14px] blue-text-gradient">#Monorepo</p>
+                  <p class="text-[14px] pink-text-gradient">#zustand</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <!-- Fancybox anchor link wrapping the image -->
+                  <a
+                    href="assets/projects/nejoum-1.png"
+                    data-fancybox="gallery"
+                    data-caption="Nejoum Express"
+                  >
+                    <img
+                      src="assets/projects/nejoum-1.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+
+                  <!-- Additional hidden images for the Fancybox gallery -->
+                  <a
+                    href="assets/projects/nejoum-2.png"
+                    data-fancybox="gallery"
+                    data-caption="Nejoum Express"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/nejoum-2.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <a
+                    href="assets/projects/nejoum-5.png"
+                    data-fancybox="gallery"
+                    data-caption="Nejoum Express"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/nejoum-5.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <a
+                    href="assets/projects/nejoum-9.png"
+                    data-fancybox="gallery"
+                    data-caption="Nejoum Express"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/nejoum-9.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <a
+                    href="assets/projects/nejoum-10.png"
+                    data-fancybox="gallery"
+                    data-caption="Nejoum Express"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/nejoum-10.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <a
+                    href="assets/projects/nejoum-11.png"
+                    data-fancybox="gallery"
+                    data-caption="Nejoum Express"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/nejoum-11.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+
+                  <a
+                    href="assets/projects/nejoum-6.png"
+                    data-fancybox="gallery"
+                    data-caption="Nejoum Express"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/nejoum-6.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <a
+                    href="assets/projects/nejoum-7.png"
+                    data-fancybox="gallery"
+                    data-caption="Nejoum Express"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/nejoum-7.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <a
+                    href="assets/projects/nejoum-8.png"
+                    data-fancybox="gallery"
+                    data-caption="Nejoum Express"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/nejoum-8.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+
+                  <a
+                    href="assets/projects/nejoum-3.png"
+                    data-fancybox="gallery"
+                    data-caption="Nejoum Express"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/nejoum-3.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <a
+                    href="assets/projects/nejoum-4.png"
+                    data-fancybox="gallery"
+                    data-caption="Nejoum Express"
+                    style="display: none"
+                  >
+                    <img
+                      src="assets/projects/nejoum-4.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <div
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <a
+                        href="https://www.figma.com/design/ErXrkFXAJlR4yXddA3sD32/Auction-(Site)?node-id=0-1&node-type=canvas"
+                        class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                      >
+                        <img
+                          src="assets/github.png"
+                          alt="Visit Now"
+                          class="w-1/2 h-1/2 object-contain"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">
+                    Nejoum Express
+                  </h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    Nejoum Express is a system to manage and handle shiping cars
+                    from America and Europe to Warehouses in UAE
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] pink-text-gradient">#Vue Js</p>
+                  <p class="text-[14px] blue-text-gradient">#tailwindcss</p>
+                  <p class="text-[14px] Green-text-gradient">#react-query</p>
+                  <p class="text-[14px] pink-text-gradient">#typescript</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <!-- Fancybox anchor link wrapping the image -->
+                  <a
+                    href="assets/projects/naj.png"
+                    data-fancybox="gallery"
+                    data-caption="Naj Auctions Project"
+                  >
+                    <img
+                      src="assets/projects/naj.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <div
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <a
+                        href="https://www.figma.com/design/ErXrkFXAJlR4yXddA3sD32/Auction-(Site)?node-id=0-1&node-type=canvas"
+                        class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                      >
+                        <img
+                          src="assets/github.png"
+                          alt="Visit Now"
+                          class="w-1/2 h-1/2 object-contain"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">Naj Auctions</h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    Naj Auctions is a Next.js-powered website offering a
+                    comprehensive platform for users to participate in car
+                    auctions. It allows users to place bids, manage their
+                    profiles, and sell their own vehicles. With a user-friendly
+                    interface and secure transaction handling, Naj Auctions
+                    simplifies the auction process for both buyers and sellers
+                    in the automotive market
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Next js</p>
+                  <p class="text-[14px] pink-text-gradient">
+                    #styled components
+                  </p>
+                  <p class="text-[14px] blue-text-gradient">#Material Design</p>
+                  <p class="text-[14px] Green-text-gradient">#Redux</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/tenten.png"
+                    data-fancybox="gallery"
+                    data-caption="Fees Engine | Injected in TenTen-pay dashboard and other 2 dashboards"
+                  >
+                    <img
+                      src="assets/projects/tenten.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <div
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <a
+                        href="#"
+                        class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                      >
+                        <img
+                          src="assets/github.png"
+                          alt="Visit Now"
+                          class="w-1/2 h-1/2 object-contain"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">
+                    Fees Engine Micro-Frontend
+                  </h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    The Fee Engine is a micro-frontend-based service designed to
+                    calculate transaction fees dynamically based on specific
+                    providers. This modular approach allows the engine to be
+                    integrated seamlessly across three different dashboards,
+                    ensuring consistent and efficient fee calculations tailored
+                    to various business needs
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#React</p>
+                  <p class="text-[14px] pink-text-gradient">#Redux</p>
+                  <p class="text-[14px] green-text-gradient">
+                    #Module Federation
+                  </p>
+                  <p class="text-[14px] blue-text-gradient">#GIT Submodule</p>
+                  <p class="text-[14px] pink-text-gradient">
+                    #styled components
+                  </p>
+                  <p class="text-[14px] blue-text-gradient">#Ant Design</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/marine.png"
+                    data-fancybox="gallery"
+                    data-caption="Marine Cleaning Services <br/> <a target='_blank' href='https://www.marinecleaningservice.ca/'>Visit Now</a>"
+                  >
+                    <img
+                      src="assets/projects/marine.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <div
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <a
+                        href="https://www.marinecleaningservice.ca/"
+                        class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                      >
+                        <img
+                          src="assets/github.png"
+                          alt="Visit Now"
+                          class="w-1/2 h-1/2 object-contain"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">
+                    Marine Cleaning Services
+                  </h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    My role as a frontend developer on the Marine Cleaning
+                    Service project, I optimized the user interface and ensured
+                    a smooth user experience, focusing on responsiveness and
+                    visual appeal for marine service clients.
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#React</p>
+                  <p class="text-[14px] green-text-gradient">#Next</p>
+                  <p class="text-[14px] pink-text-gradient">
+                    #styled components
+                  </p>
+                  <p class="text-[14px] blue-text-gradient">#Ant Design</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/tenten-website.png"
+                    data-fancybox="gallery"
+                    data-caption="TenTen Pay Website <br/> <a target='_blank' href='https://tenten-pay.com/'>Visit Now</a>"
+                  >
+                    <img
+                      src="assets/projects/tenten-website.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <div
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <a
+                        href="https://tenten-pay.com/"
+                        class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                      >
+                        <img
+                          src="assets/github.png"
+                          alt="Visit Now"
+                          class="w-1/2 h-1/2 object-contain"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">
+                    TenTen Pay Website
+                  </h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    As a frontend developer on the Tenten Pay project, I crafted
+                    a user-friendly interface for seamless financial
+                    transactions, focusing on accessibility, intuitive
+                    navigation, and mobile responsiveness.
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#React</p>
+                  <p class="text-[14px] green-text-gradient">#Next</p>
+                  <p class="text-[14px] pink-text-gradient">
+                    #styled components
+                  </p>
+                  <p class="text-[14px] blue-text-gradient">#Jest</p>
+                  <p class="text-[14px] green-text-gradient">#Ant Design</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/tenten.png"
+                    data-fancybox="gallery"
+                    data-caption="TenTen Pay Main Dashboard"
+                  >
+                    <img
+                      src="assets/projects/tenten.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <div
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">TenTen Pay</h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    In this project, I am actively involved in integrating
+                    essential services into our dashboard, enhancing its
+                    functionality and providing users with a comprehensive and
+                    streamlined experience.
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#React</p>
+                  <p class="text-[14px] pink-text-gradient">#Redux</p>
+                  <p class="text-[14px] green-text-gradient">#Typescript</p>
+                  <p class="text-[14px] pink-text-gradient">
+                    #styled components
+                  </p>
+                  <p class="text-[14px] blue-text-gradient">#Jest</p>
+                  <p class="text-[14px] green-text-gradient">#Ant Design</p>
+                  <p class="text-[14px] blue-text-gradient">
+                    #cypress unit testing
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/travel.png"
+                    data-fancybox="gallery"
+                    data-caption="Travel Advisor"
+                  >
+                    <img
+                      src="assets/projects/travel.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <div
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">
+                    Travel Advisor
+                  </h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    React App that take user location and show the nearest
+                    restaurants and hotels
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#React</p>
+                  <p class="text-[14px] green-text-gradient">
+                    #Material Design
+                  </p>
+                  <p class="text-[14px] pink-text-gradient">#Axios</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/almanea.png"
+                    data-fancybox="gallery"
+                    data-caption="Al Manea Project <br/> <a target='_blank' href='https://www.marinecleaningservice.ca/'>Visit Now</a>"
+                  >
+                    <img
+                      src="assets/projects/almanea.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <div
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">Al Manea</h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    Al Manea is an e-commerce stablished in KSA and based on
+                    Magento, In this project i developed the website to match XD
+                    and i also worked on some backend tasks
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Magento2</p>
+                  <p class="text-[14px] green-text-gradient">#Javascript</p>
+                  <p class="text-[14px] pink-text-gradient">#PHP</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/etmanaP.png"
+                    data-fancybox="gallery"
+                    data-caption="Etmana Project <br/> <a target='_blank' href='https://etmana.com/'>Visit Now</a>"
+                  >
+                    <img
+                      src="assets/projects/etmanaP.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <a
+                      href="https://etmana.com/"
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                    /></a>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">Etmana</h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    In this project i worked on two phases, Magento 2 and
+                    Angular, In Magento version I developed the website to match
+                    XD and i also kept maintaining the wesbiste In Angular
+                    version i worked on the website and admin , integrating Apis
+                    and designing the responsive design
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Angular</p>
+                  <p class="text-[14px] green-text-gradient">#RXJX</p>
+                  <p class="text-[14px] pink-text-gradient">#PrimeNG</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/moviep.jpg"
+                    data-fancybox="gallery"
+                    data-caption="Movie plateform"
+                  >
+                    <img
+                      src="assets/projects/moviep.jpg"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <div
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">
+                    Movie plateform
+                  </h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    this is a Movie plateform, i created this website to apply
+                    some points like search and pagenation and integratingapis
+                    with different way
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#React</p>
+                  <p class="text-[14px] green-text-gradient">#Axios</p>
+                  <p class="text-[14px] pink-text-gradient">#Google Apis</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div
+                class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+                style="
+                  transform: perspective(1000px) rotateX(0deg) rotateY(0deg)
+                    scale3d(1, 1, 1);
+                "
+              >
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/zegnaP.png"
+                    data-fancybox="gallery"
+                    data-caption="Zegnia e-commerce app <br/> <a target='_blank' href='https://www.zegna.com/'>Visit Now</a>"
+                  >
+                    <img
+                      src="assets/projects/zegnaP.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <a
+                      href="https://www.zegna.com/"
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                    /></a>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">Zegna</h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    Zegna is an ecommerce application based on Magento In this
+                    project i worked on customer account, cms pages, search
+                    behavior, popups and product catalog pages.
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Magento</p>
+                  <p class="text-[14px] green-text-gradient">#Javascript</p>
+                  <p class="text-[14px] pink-text-gradient">#PHP</p>
+                  <p class="text-[14px] pink-text-gradient">#Less</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/babolatP.png"
+                    data-fancybox="gallery"
+                    data-caption="Babolat e-commerce app <br/> <a target='_blank' href='https://babolat.ae/'>Visit Now</a>"
+                  >
+                    <img
+                      src="assets/projects/babolatP.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <a
+                      href="https://babolat.ae/"
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                    /></a>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">Babolat</h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    Babolat is an ecommerce application based on Magento, I
+                    prepaired the theme to match global website
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Magento</p>
+                  <p class="text-[14px] green-text-gradient">#supabase</p>
+                  <p class="text-[14px] pink-text-gradient">#css</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/bevatelP.png"
+                    data-fancybox="gallery"
+                    data-caption="Bevatel | Call-Center Solutions <br/> <a target='_blank' href='https://bevatel.com/'>Visit Now</a>"
+                  >
+                    <img
+                      src="assets/projects/bevatelP.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <a
+                      href="https://bevatel.com/"
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                    /></a>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">Bevatel</h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    It's a business website for a callcenter solutions company,
+                    i was responsibe of the whole website, so i created
+                    everything using php, i also helped SEO team to get speed of
+                    2.5s on 4G
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Bootstrap</p>
+                  <p class="text-[14px] green-text-gradient">#Javascript</p>
+                  <p class="text-[14px] pink-text-gradient">#Lottiefiles</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/ocodaP.png"
+                    data-fancybox="gallery"
+                    data-caption="Ocoda Agency Project <br/> <a target='_blank' href='https://ocoda.com/'>Visit Now</a>"
+                  >
+                    <img
+                      src="assets/projects/ocodaP.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <a
+                      href="https://ocoda.com/"
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                    /></a>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">Ocoda</h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    Ocoda is a marketing agency stablished in KSA I built this
+                    website from scratch and i handled SEO standards to obtain
+                    high speed over desktop and 4G
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Bootstrap</p>
+                  <p class="text-[14px] green-text-gradient">#Javascript</p>
+                  <p class="text-[14px] pink-text-gradient">#Lottiefiles</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/kufa.png"
+                    data-fancybox="gallery"
+                    data-caption="Kufa Restaurant Project <br/> <a target='_blank' href='https://kufa.sa/'>Visit Now</a>"
+                  >
+                    <img
+                      src="assets/projects/kufa.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <a
+                      href="https://kufa.sa/"
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                    /></a>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">Kufa</h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    Kufa is a restaurant in KSA and here is the official
+                    website, It presents the food menu, branches and contact
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Bootstrap</p>
+                  <p class="text-[14px] green-text-gradient">#Javascript</p>
+                  <p class="text-[14px] pink-text-gradient">#Wordpress</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/dashboard.png"
+                    data-fancybox="gallery"
+                    data-caption="Bevatel Main Dashboard"
+                  >
+                    <img
+                      src="assets/projects/dashboard.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <a
+                      href="https://cloud.bevatel.com/"
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                    /></a>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">
+                    Unified Dashboard
+                  </h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    In this project i applied the identity on bevatel dashboard,
+                    it's a dashboard that consists of many solutions like SMS
+                    system, report system, CRM system and LivePanel, i also
+                    worked on every single system, development and designing
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Bootstrap</p>
+                  <p class="text-[14px] green-text-gradient">#Javascript</p>
+                  <p class="text-[14px] pink-text-gradient">#PHP</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/sms.png"
+                    data-fancybox="gallery"
+                    data-caption="SMS Dashboard"
+                  >
+                    <img
+                      src="assets/projects/sms.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <a
+                      href="https://sms.bevatel.com/"
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                    /></a>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">SMS System</h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    It's a live solution included in the Unified dashboard, it
+                    allows companies to send and recieve messages around the
+                    middle east.
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Bootstrap</p>
+                  <p class="text-[14px] green-text-gradient">#Javascript</p>
+                  <p class="text-[14px] pink-text-gradient">#Laravel</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/hojuzat.webp"
+                    data-fancybox="gallery"
+                    data-caption="Hojuzat Mobile App <br/> <a target='_blank' href='https://play.google.com/store/apps/details?id=hojuzat.v3'>Visit Now</a>"
+                  >
+                    <img
+                      src="assets/projects/hojuzat.webp"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <a
+                      href="https://play.google.com/store/apps/details?id=hojuzat.v3"
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                    /></a>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">Hojuzat</h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    This is a small project that i built for a traveling agency
+                    It just a business application that presents the lastest
+                    offers and the contact info.
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Flutter</p>
+                  <p class="text-[14px] green-text-gradient">#dart</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/fashion.png"
+                    data-fancybox="gallery"
+                    data-caption="Fashion App | Magento2 <br/> <a target='_blank' href='https://clothes.itambition.com'>Visit Now</a>"
+                  >
+                    <img
+                      src="assets/projects/fashion.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <a
+                      href="https://clothes.itambition.com"
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                    /></a>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">
+                    Fashion Store
+                  </h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    This is R&amp;D project based on Magento, i built around 5
+                    projects with different frontend design on several ideas
+                    like , Bikes, Toys, Pharmacy and this one is for Fashion I
+                    handled Installation, the responsive design and maintenance
+                    of the app
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Magento</p>
+                  <p class="text-[14px] green-text-gradient">#Javascript</p>
+                  <p class="text-[14px] pink-text-gradient">#PHP</p>
+                </div>
+              </div>
+            </div>
+            <div style="opacity: 1; transform: none">
+              <div class="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div class="relative w-full h-[230px]">
+                  <a
+                    href="assets/projects/rest.png"
+                    data-fancybox="gallery"
+                    data-caption="Delivery Project | Magento2 <br/> <a target='_blank' href='https://clothes.itambition.com'>Visit Now</a>"
+                  >
+                    <img
+                      src="assets/projects/rest.png"
+                      alt="project_image"
+                      class="w-full h-full object-cover rounded-2xl"
+                    />
+                  </a>
+                  <div
+                    class="absolute inset-0 flex justify-end m-3 card-img_hover"
+                  >
+                    <a
+                      class="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <img
+                        src="assets/github.png"
+                        alt="Visit Now"
+                        class="w-1/2 h-1/2 object-contain"
+                    /></a>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <h3 class="text-white font-bold text-[24px]">Delivery</h3>
+                  <p class="mt-2 text-secondary text-[14px]">
+                    This is R&amp;D project based on Magento, i built around 5
+                    projects with different frontend design on several ideas
+                    like , Bikes, Toys, Pharmacy and this one is for Fashion I
+                    handled Installation, the responsive design and maintenance
+                    of the app
+                  </p>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <p class="text-[14px] blue-text-gradient">#Magento</p>
+                  <p class="text-[14px] green-text-gradient">#Javascript</p>
+                  <p class="text-[14px] pink-text-gradient">#PHP</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="relative z-0">
+          <section
+            class="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"
+          >
+            <span class="hash-span" id="contact">&nbsp;</span>
+            <div>
+              <div
+                class="flex-[0.75] bg-black-100 p-8 rounded-2xl d-flex justify-content-center"
+                style="
+                  transform: translateX(0%) translateY(0px) translateZ(0px);
+                  text-align: center;
+                "
+              >
+                <p
+                  class="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider"
+                >
+                  Get in touch
+                </p>
+                <h6 class="text-white">Thank You</h6>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
     <script>
-        import {
-            Fancybox
-        } from "@fancyapps/ui";
+      import { Fancybox } from "@fancyapps/ui";
 
-        document.addEventListener("DOMContentLoaded", function() {
-            Fancybox.bind("[data-fancybox='gallery']", {
-                // Options (optional)
-            });
+      document.addEventListener("DOMContentLoaded", function () {
+        Fancybox.bind("[data-fancybox='gallery']", {
+          // Options (optional)
         });
+      });
     </script>
     <script>
-        // Initialize all tooltips
-        document.addEventListener('DOMContentLoaded', function() {
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            tooltipTriggerList.forEach(function(tooltipTriggerEl) {
-                new bootstrap.Tooltip(tooltipTriggerEl)
-            })
+      // Initialize all tooltips
+      document.addEventListener("DOMContentLoaded", function () {
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+          new bootstrap.Tooltip(tooltipTriggerEl);
         });
+      });
     </script>
-</body>
-
+  </body>
 </html>
